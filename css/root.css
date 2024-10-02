@@ -8,6 +8,14 @@
   --font-secondary: "roboto";
 }
 
+/* Reset: limpa stilo dos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Itens comuns no site */
 .container {
   margin: auto;
   width: 100%;
