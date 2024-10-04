@@ -121,14 +121,14 @@ header .logo {
     background-color: var(--yellow);
 }
 
-.left{
+.left {
     /* text-align: left; */
     /* float: left; */
     display: flex;
     justify-content: start;
 }
 
-.right{
+.right {
     /* text-align: right; */
     /* float: right; */
     display: flex;
@@ -136,73 +136,76 @@ header .logo {
 }
 
 
-
-container {
+/* Servicos */
+.card-container {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     background-color: #444;
+    padding: 80px 0;
 }
+
 
 .card {
     margin: 10px;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    width: 500px;
-    position: relative;
+    width: 330px;
+    /* position: relative; */
     overflow: hidden;
- 
-}img{
-width: 100%;
-display: block;
-margin: auto;
-   
 }
-.content{
+
+.card img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.card-content {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
+    /* opacity: 0; */
+    /* transition: 0.6s; */
+    color: var(--white);
+    background-color: var(--black);
+    text-align: center;
+    padding: 10px;
 }
-.content:hover{
+
+/* .card-content:hover {
     opacity: 1;
-}
-.content h1{
-    font-size: 55px;
-    color: yellow;
+} */
+
+.card-content h2 {
+    font-size: 32px;
     margin-bottom: 15px;
+}
+
+.card-content p {
+    font-size: 18px;
+    /* color: blueviolet; */
+    margin-bottom: 15px;
+    /* padding-left: 17px; */
 
 }
 
-.content p{
-    font-size: 22px;
-    color: blueviolet;
- margin-bottom: 15px;
- padding-left: 17px;
-
-}
-.content > *{
+/* .card-content>* {
     transform: translateY(25px);
     transition: transform 0.6s;
-
 }
 
-
-.content:hover  > *{
+.card-content:hover>* {
     transform: translateY(0px);
-
-}
-
-
-
-
+} */

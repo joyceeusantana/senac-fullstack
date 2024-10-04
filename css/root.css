@@ -23,10 +23,15 @@
   max-width: 1280px;
 }
 
-.bold{
+.bold {
   font-weight: 600;
 }
 
-.bolder{
+.bolder {
   font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
